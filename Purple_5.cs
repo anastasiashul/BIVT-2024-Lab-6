@@ -34,10 +34,10 @@ namespace Lab_6
                 {
                     if (questionNumber == 1)
                     {
-                        if (_animal == x.Animal) res++;
+                        if (x.Animal != null && _animal == x.Animal) res++;
                     }
-                    else if (questionNumber == 2 && CharacterTrait == x.CharacterTrait) res++;
-                    else if(questionNumber == 3 &&Concept == x.Concept) res++;
+                    else if (questionNumber == 2 && x.CharacterTrait!= null && CharacterTrait == x.CharacterTrait) res++;
+                    else if(questionNumber == 3 && x.Concept != null && Concept == x.Concept) res++;
                 }
                 return res;
             }

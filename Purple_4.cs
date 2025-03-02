@@ -24,12 +24,12 @@ namespace Lab_6
             {
                 _name = name;
                 _surname = surname;
-                _time = -10;
+                _time = 0;
             }
 
             public void Run(double time)
             {
-                if (_time == -10) _time = time;
+                if (_time == 0) _time = time;
             }
 
             public void Print()

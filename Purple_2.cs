@@ -40,6 +40,7 @@ namespace Lab_6
             {
                 get
                 {
+                    if(_marks == null) return 0;
                     int answer = 60;
                     int maxres = 0, minres = int.MaxValue;
                     for(int i = 0; i< _marks.Length; i++)

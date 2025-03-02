@@ -89,8 +89,12 @@ namespace Lab_6
             public void Evaluate(double result)
             {
                 if(_marks == null) return;
-                _marks[countmark] = result;
-                countmark++;
+                if (countmark < 7)
+                {
+                    _marks[countmark] = result;
+                    countmark++;
+                }
+
             }
 
             public static void SetPlaces(Participant[] participants)
