@@ -79,7 +79,7 @@ namespace Lab_6
                 if (array == null) return;
                 for(int i=1, j=2; i<array.Length; )
                 {
-                    if(i==0 || array[i].Result < array[i - 1].Result)
+                    if(i==0 || array[i].Result <= array[i - 1].Result)
                     {
                         i = j; j++;
                     }
